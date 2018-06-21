@@ -1,0 +1,15 @@
+{
+  "name": "dba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/main.css -w"
+  },
+  "author": "Eugene D",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "node-sass": "^4.9.0"
+  }
+}
