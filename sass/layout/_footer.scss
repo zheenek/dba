@@ -1,0 +1,79 @@
+.footer {
+    width: 100%;
+    background-color: #333;
+    
+    &__menu {
+        text-align: center;
+        list-style: none;
+        
+        
+        &__item {
+            display: inline-block;
+            padding: 2.5rem 2rem;
+            @include respond(phone) {
+                padding: 1.5rem 1.5rem;
+            }
+            
+            &--link {
+                text-decoration: none;
+                color: #aaa;
+                font-size: 1.8rem;
+                font-family: "Segoe UI", sans-serif;
+                font-weight: 100;
+                letter-spacing: 1px;
+                transition: color .2s ease-out;
+                @include respond(phone) {
+                    font-size: 1.6rem;
+                }
+                
+                &:hover {
+                    color: $color-main;
+                }
+            }
+        }
+    }
+}
+
+.quote {
+    color: #aaa;
+    font-size: 1.4rem;
+    font-family: "Segoe UI Light", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 1rem auto;
+    @include respond(phone) {
+        font-size: 1.2rem;
+    }
+    
+    &::before {
+        display: inline-block;
+        content: "";
+        width: 2rem;
+        height: 1px;
+        margin-right: 1rem;
+        background-color: #aaa;
+        vertical-align: middle;
+    }
+    
+    &::after {
+        display: inline-block;
+        content: "";
+        width: 2rem;
+        margin-left: 1rem;
+        height: 1px;
+        background-color: #aaa;
+        vertical-align: middle;
+    }
+}
+
+.dba {
+    color: #aaa;
+    font-size: 1.4rem;
+    font-family: "Segoe UI Light", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-bottom: 2rem;
+    @include respond(phone) {
+        font-size: 1.2rem;
+    }
+}

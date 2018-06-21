@@ -1,0 +1,66 @@
+.albums {
+    position: relative;
+    width: 80%;
+    margin: 10rem auto;
+    text-align: center;
+    
+    &__list {
+        position: relative;
+        width: 100%;
+        list-style: none;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        align-self:center;
+        flex-flow: row wrap;
+        flex: 3;
+        @include respond(tab-port) {
+            flex-flow: column;
+        }
+        
+        &__item {
+            position: relative;
+            width: 34rem;
+            height: 34rem;
+            margin: .5rem;
+            border-radius: 3px;
+            overflow: hidden;
+            z-index: 1;
+            
+            @include respond(tab-port) {
+                width: 30rem;
+                height: 30rem;
+            }
+        }
+    }
+}
+
+.album-1 {
+    background-image: url(../img/album_1.jpg);
+    @include bg;
+}
+
+.album-2 {
+    background-image: url(../img/album_2.jpg);
+    @include bg;
+}
+
+.album-3 {
+    background-image: url(../img/album_3.jpeg);
+    @include bg;
+}
+
+.album-4 {
+    background-image: url(../img/album_4.jpg);
+    @include bg;
+}
+
+.album-5 {
+    background-image: url(../img/album_5.jpg);
+    @include bg;
+}

@@ -1,0 +1,116 @@
+.navi {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    text-align: center;
+    height: 7rem;
+    background-color: #fff;
+    z-index: 50;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    flex-direction: row;
+    
+    &__logolink {
+        display: block;
+        margin-left: 10%;
+        transition: filter .3s ease-out;
+        @include respond(tab-port) {
+            margin-left: 5%;
+        }
+        
+        &:hover {
+            -o-filter: brightness(1.3);
+            -moz-filter: brightness(1.3);
+            -webkit-filter: brightness(1.3);
+            filter: brightness(1.3);
+        }
+    }
+    
+    &__menu-link {
+        display: none;
+        @include respond(tab-port) {
+            display: block;
+            margin-right: 10%;
+        }
+    }
+    
+    &__logo {
+        width: 9rem;
+        height: 5rem;
+        @include respond(tab-port) {
+            width: 7rem;
+            height: 4rem;
+        }
+    }
+    
+    &__list {
+        position: relative;
+        width: 50rem;
+        text-align: right;
+        margin-right: 10%;
+        list-style: none;
+        @include respond(tab-port) {
+            display: none;
+        }
+        
+        
+        &--link {
+            text-decoration: none;
+            color: #000;
+            font-family: "Segoe UI", sans-serif;
+            font-size: 1.6rem;
+            font-weight: bold;
+            letter-spacing: .5px;
+            line-height: 7rem;
+            margin-right: 2rem;
+            &:last-child {
+                margin-right: 0;
+            }
+            
+            &__item {
+                position: relative;
+                display: inline-block;
+                height: 7rem;
+                width: 7rem;
+                text-align: center;
+                transition: all .25s ease-in-out;
+                
+                &::after {
+                    content: "";
+                    width: 0%;
+                    height: 3px;
+                    background-color: #000;
+                    position: absolute;
+                    left: 0; top: 5.4rem;
+                    transition: width .3s cubic-bezier(.62,.01,.59,.7);
+                }
+                
+                &:hover::after {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*.border {
+    width: 100%;
+    height: 7.3rem;
+    position: fixed;
+    top: 0; left: 0;
+    background-image: $gradient;
+    z-index: 49;
+}
+*/
+
+.icon {
+    color: #000;
+    font-size: 2.5rem;
+}

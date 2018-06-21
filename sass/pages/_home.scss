@@ -1,0 +1,135 @@
+.wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+.section-group {
+    width: 90%;
+    margin: 9rem auto;
+    
+    &__heading {
+        text-align: center;
+        font-size: 5rem;
+        font-family: 'Cookie', cursive;
+        font-weight: 100;
+        margin-bottom: 3rem;
+        line-height: 5.5rem;
+        @include respond(tab-port) {
+            font-size: 4.5rem;
+            line-height: 4.5rem;
+        }
+    }
+    
+    &--line {
+        margin: 5rem auto;
+        width: 20rem;
+        border: 0;
+        background-color: $color-main;
+        height: .3rem;
+        @include respond(tab-port) {
+            margin: 3.5rem auto;
+            width: 15rem;
+        }
+    }
+    
+    &__member {
+        width: 60%;
+        display: block;
+        margin: 4rem auto;
+        @include respond(tab-port) {
+            width: 80%;
+        }
+        @include respond(phone) {
+            width: 95%;
+        }
+        
+        &--name {
+            font-size: 3.2rem;
+            font-family: "Segoe UI", sans-serif;
+            font-weight: 600;
+            letter-spacing: 2px;
+            padding: 2.5rem 0;
+            color: #444;
+            text-align: center;
+            @include respond(tab-port) {
+                font-size: 3rem;
+                padding: 2rem 0;
+            }
+            @include respond(phone) {
+                font-size: 2.4rem;
+                padding: 1.5rem 0;
+            }
+        }
+        
+        &--photo {
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+            max-height: 80rem;
+            border-radius: 3px;
+        }
+    }
+}
+
+.paragraph {
+    text-align: left;
+    font-size: 2rem;
+    font-family: "Times", serif;
+    letter-spacing: .5px;
+    line-height: 3rem;
+    font-weight: lighter;
+    width: 60%;
+    margin: 0 auto;
+    @include respond(tab-port) {
+        width: 80%;
+        font-size: 1.8rem;
+        letter-spacing: .3px;
+    }
+    @include respond(phone) {
+        width: 95%;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        letter-spacing: 0;
+    }
+}
+
+.mp {
+    width: 100%;
+}
+
+.handwritten {
+    font-family: 'Cookie', cursive;
+    font-size: 6.4rem;
+    @include respond(tab-port) {
+        font-size: 5rem;
+    }
+}
+
+.by {
+    color: $color-main;
+}
+
+.group-photo {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 3px;
+    @include respond(tab-port) {
+        width: 80%;
+    }
+    @include respond(phone) {
+        width: 95%;
+    }
+}
+
+.members {
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+    font-family: "Segoe UI Light", sans-serif;
+    color: #444;
+    letter-spacing: 7px;
+    @include respond(tab-port) {
+        font-size: 3.2rem;
+    }
+}
