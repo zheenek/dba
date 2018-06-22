@@ -12,15 +12,15 @@
     &.show {
         animation-name: showMenu;
         animation-fill-mode: forwards;
-        animation-duration: .8s;
-        animation-timing-function: cubic-bezier(.62,.01,.59,.7);
+        animation-duration: .65s;
+        animation-timing-function: ease-in-out;
     }
     
     &.close {
         animation-name: hide;
         animation-fill-mode: backwards;
-        animation-duration: .8s;
-        animation-timing-function: cubic-bezier(.62,.01,.59,.7);
+        animation-duration: .65s;
+        animation-timing-function: ease-in-out;
     }
     
     &__logo {
