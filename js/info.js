@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/*$(document).ready(function() {
     $('.ai1').on('click', function() {
         $('.a1').style.opacity = "1"; 
     });
@@ -22,4 +22,4 @@ $(document).ready(function() {
     $('.ai5').on('click', function() {
         $('.a5').style.opacity = "1"; 
     });
-});
+});*/
