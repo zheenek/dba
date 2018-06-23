@@ -4,7 +4,7 @@ $(document).ready(function() {
     });
     
     $('.hideInfo').on('click', function() {
-        $('.album-info').style.opacity = "0";    
+        $('.a1').style.opacity = "0";    
     });
     
     $('.ai2').on('click', function() {
