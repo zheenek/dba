@@ -129,20 +129,20 @@ html {
   z-index: 999;
   text-align: center;
   display: block;
-  transform: translateX(200%); }
+  transform: translateX(100%); }
   .mob-menu.show {
     animation-name: showMenu;
     animation-fill-mode: forwards;
-    animation-duration: .8s;
-    animation-timing-function: cubic-bezier(0.62, 0.01, 0.59, 0.7); }
+    animation-duration: .65s;
+    animation-timing-function: ease-in-out; }
   .mob-menu.close {
     animation-name: hide;
     animation-fill-mode: backwards;
-    animation-duration: .8s;
-    animation-timing-function: cubic-bezier(0.62, 0.01, 0.59, 0.7); }
+    animation-duration: .65s;
+    animation-timing-function: ease-in-out; }
   .mob-menu__logo {
     width: 10rem;
-    margin: 5rem auto; }
+    margin: 4rem auto; }
   .mob-menu__close {
     color: #fff;
     font-size: 2.5rem;
@@ -165,7 +165,7 @@ html {
 
 @keyframes showMenu {
   0% {
-    transform: translateX(200%); }
+    transform: translateX(100%); }
   100% {
     transform: translateX(0); } }
 
@@ -173,7 +173,7 @@ html {
   0% {
     transform: translateX(0); }
   100% {
-    transform: translateX(200%); } }
+    transform: translateX(100%); } }
 
 .footer {
   width: 100%;
@@ -197,7 +197,7 @@ html {
         transition: color .2s ease-out; }
         @media (max-width: 37.5em) {
           .footer__menu__item--link {
-            font-size: 1.6rem; } }
+            font-size: 1.2rem; } }
         .footer__menu__item--link:hover {
           color: #dd0b5b; }
 
@@ -210,7 +210,7 @@ html {
   margin: 1rem auto; }
   @media (max-width: 37.5em) {
     .quote {
-      font-size: 1.2rem; } }
+      font-size: 1rem; } }
   .quote::before {
     display: inline-block;
     content: "";
@@ -237,7 +237,7 @@ html {
   padding-bottom: 2rem; }
   @media (max-width: 37.5em) {
     .dba {
-      font-size: 1.2rem; } }
+      font-size: 1rem; } }
 
 .album-info {
   position: absolute;
@@ -472,6 +472,23 @@ h4 {
           width: 30rem;
           height: 30rem; } }
 
+.albumInfo {
+  text-align: center;
+  position: absolute;
+  top: 1.6rem;
+  right: 1.6rem;
+  font-family: "Calibri", sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: .5rem 1.4rem;
+  background-color: #fff;
+  border-radius: 100%;
+  display: none; }
+  @media (max-width: 56.25em) {
+    .albumInfo {
+      display: block; } }
+
 .album-1 {
   background-image: url(../img/album_1.jpg);
   background-size: cover;
@@ -501,3 +518,23 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top; }
+
+.about {
+  width: 80%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  text-align: center; }
+  .about__text {
+    font-family: "Calibri",sans-serif;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #222;
+    letter-spacing: .5px;
+    line-height: 2.5rem; }
+
+.f-about {
+  position: absolute;
+  bottom: 0;
+  left: 0; }

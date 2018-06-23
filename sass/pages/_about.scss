@@ -1,0 +1,21 @@
+.about {
+    width: 80%;
+    position: absolute;
+    top: 40%; left: 50%;
+    transform: translate(-50%,-40%);
+    text-align: center;
+    
+    &__text {
+        font-family: "Calibri",sans-serif;
+        font-size: 1.6rem;
+        font-weight: 300;
+        color: #222;
+        letter-spacing: .5px;
+        line-height: 2.5rem;
+    }
+}
+
+.f-about {
+    position: absolute;
+    bottom: 0; left: 0;
+}
