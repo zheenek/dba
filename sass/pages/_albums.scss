@@ -41,17 +41,12 @@
 }
 
 .albumInfo {
-    text-align: center;
     position: absolute;
-    width: 2.4rem; height: 2.4rem;
-    padding: .3rem;
+    width: 3rem; height: 3rem;
     top: 1.6rem; right: 1.6rem;
-    font-family: "Calibri", sans-serif;
-    font-style: italic;
-    font-weight: 600;
-    font-size: 1.8rem;
-    background-color: #fff;
-    border-radius: 100%;
+    font-size: 2.4rem;
+    color: #fff;
+    text-shadow: 0 0 .5rem #0d0d0d;
     display: none;
     opacity: .9;
     @include respond(tab-port) {
